@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,600&display=swap');
+/* =====Variables Css======= */
+
+:root{
+    --main-color:rgba(204, 226, 255, 0.8);
+    --blue:#0000ff;
+    --blue-dark:#18293c;
+    --orange:#ffa500;
+    --green-yellow:#cddc39;
+    --cyan-light:#aef1ee;
+    --white:#ffffff;
+    --white-apha-40:rgba(255,255,255,0.40);
+    --white-apha-25:rgba(255,255,255,0.25);
+    --backdrop-filter-blur:blur(5px);
+}
+/* ==========BODY============ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+    font-family: 'Poppins', sans-serif;
+    outline:none;
+    
+
+}
+
+::before,
+::after{
+        box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(to bottom right, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    overflow:hidden;
+    color: var(--white);
+    font-size: 15px;
+    text-decoration: none;
+    line-height:1.5;
+    padding:5vh 15px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+}
+body::before{
+    content:'';
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background: var(--main-color);
+    z-index:-1;
+    opacity:0.12;
+
+
+}
+h1,h2{
+    font-weight: 600;
+} 
+h3,h4,h5,h6{
+        font-weight: 500;
+}
+img{
+    max-width:100%;
+    vertical-align:middle;
+    
+}
+
+section{
+    background-color: var(--white-apha-25);
+    border:1px solid var(--white-apha-40);
+    min-height:80vh;
+    border-radius:30px;
+}
+
+.main{
+    max-width:1200px;
+    margin:auto;
+}
+
+.container{
+    /* background-color: #ffa500; */
+    padding:0 40px;
+    width:100%;
+}
+
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.align-items-center{
+    align-items: center;
+}
+
+
+.hidden{
+
+    display:none!important;
+}
+
+/* Section about */
+
+.sec-padding{
+    padding:80px 0;
+}
+.section-title{
+    padding:0 15px;
+    width:100%;
+    text-align:center;
+    margin-bottom:40px;
+   
+}
+.section-title{
+    font-size:35px;
+    text-transform:capitalize;
+}
+
+
+
+.about-img{
+  
+    width:40%;
+    padding:0 15px;
+}
+
+.about-text{
+   
+    width:60%;
+    padding:0 15px;
+}
+
+.about-img .img-box{
+    background-color:var(--white-apha-25); 
+    max-width: 300px;
+    border:1px solid var(--white-alpha-40);
+    margin:auto;
+    border-radius: 15px;;
+}
+
+.about-img .img-box{
+    width:100%;
+}
+
+.about-text h3{
+    text-transform:capitalize;
+    font-size:20px;
+    margin:20px 0;
+}
+
+.about-text .skills{
+    display:flex;
+    flex-wrap:wrap;
+}
+.about-text .skill-item{
+    background-color:var(--white-apha-25);
+    border:1px solid var(--white-apha-40);
+    padding:5px 15px;
+    text-transform: capitalize;
+    margin:0 10px 10px 0;
+    border-radius:20px;
+   
+}
+
+.about-tabs .tab-item{
+    padding:2px 0;
+    background-color:transparent;
+    border:none;
+    text-transform:capitalize;
+    display:inline-block;
+    color:
+
+}
+
+a{
+    text-decoration: none;
+}
+/* Button */
+.btn{
+    line-height:1.5;
+    padding:10px 28px;
+    border-radius:50px;
+    display: inline-block;
+    
+    /* background-color:rgba(204, 226, 255, 0.8); */
+    background-color: var(--white-apha-25);
+    color:black;
+    border:1px solid var(--white-alpha-40);
+    font-weight:bold;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 18px;
+    transition:.4s;
+    padding-top: 10px;
+
+}
+
+
+.btn:hover{
+    background-color:transparent;
+    border:2px solid purple;
+
+    color: #fff;
+    
+    cursor:pointer;}
+
+/* Scroll Bar  */
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-track{
+
+    background-color: var(--white-apha-25);;
+}
+
+/* =======Home section */
+
+.home-section{
+    display:flex;
+    padding:120px 0;
+}
+.home-text p{
+    /* background-color:blue; */
+    font-size: 18px;
+}
+
+.home-text h1{
+    font-size:55px;
+    text-transform:capitalize;
+}
+.home-text .btn{
+    margin:0 15px 15px 0;
+}
+.home-text h2{
+    font-size:19px;
+    text-transform:capitalize;
+    font-weight:300;
+    margin:0 0 30px;
+}
+.home-img {
+  
+    
+}
+
+.home-text,.home-img{
+    width:50%;
+    padding:39px;
+}
+.home-img .img-box{
+    max-width:360px;
+    background-color:var(--white-apha-25);
+    border:8px solid var(--white-apha-25);
+    border-radius: 50%;
+}
+.home-img .img-box img{
+    width:100%;
+    border-radius:50%;}
+ 
