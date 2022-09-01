@@ -9,26 +9,100 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             
             <link rel="stylesheet" href="style.css">
+        
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         </head>
 
         <body>
-            <!-- Début Projet -->
-            <div class="main">
 
-                <section class="home-section align-items-center hidden">
+            <!-- loader -->
+            <div class="page-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+
+
+
+
+            <!-- Circles B-->
+            <div class="bg-circles">
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+                <div class="circle-4"></div>
+
+            </div>
+
+
+
+            <div class="overlay">
+
+            </div>
+
+
+
+            <!-- Début Projet -->
+            <div class="main hidden">
+             <!-- Header -->
+             <header class="header">
+                <div class="container">
+                    <div class="row flex-end">
+                    <button type="button" class="nav-toggler">
+                        <span></span> </button>
+                        <nav class="nav">
+                            <div class="nav-inner">
+                                <ul>
+                                    <li>
+                                        <a href="#home" class="nav-item link-item">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about" class="nav-item link-item">
+                                            About
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#portfolio" class="nav-item link-item">
+                                            Portfolio
+                                        </a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="#services" class="nav-item link-item">
+                                            Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact" class="nav-item link-item">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                      
+                   
+                    </div>
+                </div>
+             </header>
+             <!-- fin header -->
+                <section class="home-section align-items-center active " id="home">
                     <div class="container">
                        <div class="row align-items-center">
-                            <div class="home-text">
-                                <p>Hello guys,I'm </p>
+                              <div class="home-text">
+                                <p>Salut ! je suis le Developpeur full-stack</p>
                                 <h1>Gloire Ondongo</h1>
-                                <h2>I'm Full stack developper</h2>
-                                <a href="" class="btn">Envoyer</a>
-                                <a href="" class="btn">Portefolio</a>
+                                <h2>Bienvenue dans mon portfolio Website</h2>
+                                <a href="#portfolio" class="btn link-item">Portfolio &nbsp;<i class="fa-solid fa-briefcase"></i></a>
+                                <a href="#about" class="btn link-item">About &nbsp;<i class="fa-solid fa-circle-info"></i></a>
                             </div>
 
                             <div class="home-img">
                                 <div class="img-box">
-                                    <img src="img/perfil.png" alt="perfil">
+                                    <img src="img/gg.png" alt="perfil">
                                 </div>
                             </div>
                        </div> 
@@ -37,12 +111,12 @@
                 </section>
 <!-- Partie ABout -->
 
-                <section class="about-section sec-padding">
+                <section class="about-section sec-padding  " id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title">
-                        
-                            <h2>About me</h2>
+                                <div class="divider"><span></span><span><h2>About</h2></span><span></span></div>
+                            
 
                             </div>
                         </div>
@@ -56,35 +130,281 @@
                             </div>
 
                             <div class="about-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, esse officia sapiente nesciunt aliquid minus quisquam eligendi dolore ut laboriosam quis earum delectus, aut voluptatibus porro vero distinctio accusamus nulla!</p>
+                                <p>Actuellement en 3e année à ISM digital campus mon but est de réaliser les défis les plus surprenants 
+                                    être un atout indispensable et 
+                                    apporter quelque chose de nouveau 
+                                    dans les secteurs dans Lequel 
+                                    j’excelle notammant dans le domaine informatique</p>
 
                                 <h3>Skills</h3>
                                 <div class="skills">
                                     <div class="skill-item">html</div>
                                     <div class="skill-item">css</div>
+                                    <div class="skill-item">Bootstrap</div>
+                                    <div class="skill-item">Flutter</div>
                                     <div class="skill-item">java</div>
                                     <div class="skill-item">php</div>
-                                    <div class="skill-item">python</div>
+                                    <div class="skill-item">python(Django)</div>
                                     <div class="skill-item">C</div>
                                     <div class="skill-item">C++</div>
 
                                 </div>
 
                                 <div class="about-tabs"> 
-                                    <button type="button" class="tab-item" data-target=""></button>
-                                    <button type="button" class="tab-item" data-target=""></button>
+                                    <button type="button" class="tab-item active" data-target="#education">formation</button>
+                                    <button type="button" class="tab-item " data-target="#experience">experience</button>
                                 </div>
 
-                            </div>
 
+                                <div class="tab-content active" id="education">
+                                    <div class="timeline">
+                                        <div class="timeline-item">
+                                            <span class="date">2019 -2020</span>
+                                            <h4>Baccalauréat Scientifique -<span>Ecole privé Les Dauphins</span></h4>
+                                            <p>description de l'année</p>
+                                        </div>
+
+
+
+                                        <div class="timeline-item">
+                                            <span class="date">2019 -2020</span>
+                                            <h4>Baccalauréat Scientifique -<span>Ecole privé Les Dauphins</span></h4>
+                                            <p>description de l'année</p>
+                                        </div>
+
+
+                                        <div class="timeline-item">
+                                            <span class="date">2019 -2020</span>
+                                            <h4>Baccalauréat Scientifique -<span>Ecole privé Les Dauphins</span></h4>
+                                            <p>description de l'année</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fin formation -->
+
+
+                                <!-- experience -->
+                                <div class="tab-content" id="experience">
+                                    <div class="timeline">
+                                        <div class="timeline-item">
+                                            <span class="date">2019 -2020</span>
+                                            <h4>Full stack developper</span></h4>
+                                            <p>description de l'année</p>
+                                        </div>
+
+                                        <div class="timeline-item">
+                                            <span class="date">2019 -2020</span>
+                                            <h4>Full stack developper</span></h4>
+                                            <p>description de l'année</p>
+                                        </div>
+
+                                        <div class="timeline-item">
+                                            <span class="date">2019 -2020</span>
+                                            <h4>Full stack developper</span></h4>
+                                            <p>description de l'année</p>
+                                        </div></div></div><!-- Fin experience -->
+
+                                        <a href="download/cv.pdf" target="_blank" class="btn">Télécharger Cv &nbsp;&nbsp;<i class="fa-solid fa-download"></i></a>
+                        <a href="#contact" class="btn link-item"> Contactez-moi &nbsp;&nbsp;<i class="fa-solid fa-paper-plane"></i></a>
+                            </div>
+                        </div>     
+
+
+
+                    </div>
+                   
+
+                </section>
+
+                <!-- About fin -->
+
+                <section class="portfolio-section sec-padding "id="portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title">
+                                <div class="divider"><span></span><span><h2>Projets récents</h2></span><span></span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="portfolio-item">
+                         
+                                <div class="portfolio-item-thumbnail">
+                                    <img src="img/portfolio5.jpg" alt="portfolio item thumb">
+
+                                </div>
+                                <h3 class="portfolio-item-title">Monark Website</h3>
+
+                                <button type="button" class="btn view-project-btn">Ouvrir Projet <i class="fa-solid fa-lock-open"></i></button>
+                                <div class="portfolio-item-details">
+                                    <div class="description">
+                                        <p>details du projet</p>
+                                    </div>
+
+                                    <div class="general-info">
+                                        <ul>
+                                            <li>Crée <span> Avril 2020</span></li>
+                                            <li>technologie utlisé<span>Wordpress</span></li>
+                                            <li> Rôle<span>Developpeur</span></li>
+                                            <li>Visiter<span><a href="https://monark-group.sn/" target="_blank">Monark-group</a></span></li>
+                                        </ul>
+                                    </div>
+                               
+                            </div>
 
                         </div>
 
-                    </div>
 
+
+                                <!-- Debut -->
+                                <div class="portfolio-item">
+            
+                                <div class="portfolio-item-thumbnail">
+                                    <img src="img/grainwebsite.jpg" alt="portfolio item thumb">
+
+                                </div>
+                                <h3 class="portfolio-item-title">Grain Website</h3>
+                                <button type="button" class="btn view-project-btn">Ouvrir Projet <i class="fa-solid fa-lock-open"></i></button>
+                                <div class="portfolio-item-details">
+                                    <div class="description">
+                                        <p>details du projet</p>
+                                    </div>
+
+                                    <div class="general-info">
+                                        <ul>
+                                            <li>Crée <span> Avril 2020</span></li>
+                                            <li>technologie utlisé<span>Wordpress</span></li>
+                                            <li> Rôle<span>Developpeur</span></li>
+                                            <li>Visiter<span><a href="https://grain-africa.org/" target="_blank">grain-africa</a></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                            <!-- fin 2project -->
+
+
+
+                                 <!-- Debut -->
+                                 <div class="portfolio-item">
+                                    <div class="portfolio-item-thumbnail">
+                                        <img src="img/flutter_app.jpg" alt="portfolio item thumb">
+    
+                                    </div>
+                                    <h3 class="portfolio-item-title">E-transport</h3>
+                                    <button type="button" class="btn view-project-btn">Ouvrir Projet <i class="fa-solid fa-lock-open"></i></button>
+                                    <div class="portfolio-item-details">
+                                        <div class="description">
+                                            <p>details du projet</p>
+                                        </div>
+    
+                                        <div class="general-info">
+                                            <ul>
+                                                <li>Crée <span> Avril 2020</span></li>
+                                                <li>technologie utlisé<span>Flutter-Dart</span></li>
+                                                <li> Rôle<span>Developpeur</span></li>
+                                                <li>Visiter<span><a href="https://grain-africa.org/" target="_blank">download apk</a></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+    
+                                <!-- fin 2project -->
+
+                        </div>
+                    </div>
                 </section>
+
+                
+                <section class="contact-section sec-padding " id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title">
+                                <div class="divider"><span></span><span><h2>Contact</h2></span><span></span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="contact-form">
+                                <form>
+                                    <div class="row">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Nom" class="input-control" required> 
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject" class="input-control" required>
+                                 </div>
+
+                                 <div class="input-group">
+                                    <input type="email" placeholder="Email" class="input-control" required>
+                                 </div>
+
+                                 <div class="input-group">
+                                    <textarea placeholder="Message" class="input-control"></textarea>
+                                 </div>
+                                
+
+                                 <div class="submit-btn">
+                                     <button type="submit" class="btn">Envoyer le message &nbsp;&nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+                                    </div>
+                                </div>
+                            
+
+                        </form>
+                        </div>
+                
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            
+                            <h3>Email</h3>
+                            <p>example@gmail.com</p>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <h3>Phone</h3>
+                            <p>77 xxx xx xx</p>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <h3>Abonnez-vous à moi</h3>
+                            <div class="social-links">
+                                <a href="#" target="_blank"><i class="fab fa-facebook f-"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-git"></i></a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    </div>
+                </section>
+    
         </div>
-        <script src="js/script.js"></script>
+
+<!-- Ici je me suis arrete -->
+        <div class="portfolio-popup hidden">
+
+            <div class="pp-inner">
+                <div class="pp-content">
+                    <div class="pp-header">
+                        <button type=btn class="btn pp-close"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="pp-thumbnail">
+                            <img src="img/portfolio5.jpg" alt="pp-thumbnail">
+                        </div>
+                        <h3>page</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Popup portofolio -->
+       
+        <script src="script.js"></script>
         </body>
 
 
